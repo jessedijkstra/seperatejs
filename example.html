@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.element {
+				width: 500px;
+				height: 500px;
+				background: #0f0;
+			}
+		</style>
+		<script src="seperate.js"></script>
+	</head>
+	<body>
+		<div class="element">
+			<p>Test Element</p>
+		</div>
+		<script>
+		(function(window) {
+			var element = document.querySelector('.element');
+
+			seperateTouchAndMouseEvents(element, 'click');
+
+			element.addEventListener('click', function() {
+				alert('Normal click');
+			});
+
+			element.addEventListener('mouseclick', function() {
+				alert('Mouse click');
+			});
+
+			element.addEventListener('touchclick', function() {
+				alert('Touch click');
+			});
+		})(window);
+		</script>
+	</body>
+</html>

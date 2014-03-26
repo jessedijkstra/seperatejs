@@ -1,0 +1,29 @@
+{
+  "name": "seperatejs",
+  "version": "0.0.1",
+  "homepage": "https://github.com/jessedijkstra/seperatejs",
+  "authors": [
+    "Jesse Dijkstra <jesse@blendle.nl>"
+  ],
+  "description": "SeperateJS provides a function to create seperate events for touch and mouse events. i.e.: touchclick or mouseclick and click.",
+  "main": "seperate.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "event",
+    "touch",
+    "mouse",
+    "seperate"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
